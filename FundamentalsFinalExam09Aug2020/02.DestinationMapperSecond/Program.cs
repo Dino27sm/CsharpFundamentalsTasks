@@ -9,7 +9,7 @@ namespace _02.DestinationMapperSecond
         static void Main(string[] args)
         {
             List<string> destinations = new List<string>();
-            string pattern = @"(\=|\/)([A-Z][a-z]{2,})\1";
+            string pattern = @"(\=|\/)([A-Z][A-Za-z]{2,})\1";
             string inpText = Console.ReadLine();
             MatchCollection getMatches = Regex.Matches(inpText, pattern);
             if (getMatches.Count > 0)
