@@ -20,7 +20,6 @@ namespace _11.ArrayManipulator
                         int index = int.Parse(command[1]);
                         if (index < 0 || index > (arrLength - 1)) Console.WriteLine("Invalid index");
                         else inpArr = Exchange(inpArr, index); // write a Method "Exchange(string num)"
-                            
                         break;
                     case "max":
                         int maxIndex = MaxEvenOdd(inpArr, command[1]);
